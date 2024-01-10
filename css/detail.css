@@ -1,0 +1,162 @@
+
+.detailpage {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none; 
+  box-sizing: border-box;
+  scrollbar-width: none; 
+}
+
+.detailpage .swiper-container {position: relative;width: 93%;margin: 0 auto;padding-top: 100px;}
+.detailpage .swiper-container .swiper-slide {width: 100%;opacity: 0.3;transition: 1s;}
+.detailpage .swiper-container .swiper-slide.swiper-slide-active {opacity: 1;}
+.detailpage .swiperArr {position: absolute;top: 0;z-index: 10000;width: 100%;right: 0;}
+.detailpage .swiperArr .swiper-button-prev {left: 90%;background-color: #111;border-radius: 0.3rem;}
+.detailpage .swiperArr .swiper-button-next {border-radius: 0.3rem;right: 0;background-color: #111;}
+.detailpage .swiperArr .swiper-button-next, .detailpage .swiperArr .swiper-button-prev {padding: 0 10px;top: 80% !important;}
+.detailpage .swiper-button-prev:after, .detailpage .swiper-button-next:after {font-size: 20px !important;}
+
+.detailpage::-webkit-scrollbar {display: none;}
+
+.detailpage.everydetail .swiperArr .swiper-button-prev {left: 85%;}
+
+
+.detailIn {width: 800px;margin: 0 auto;padding-top: 150px;padding-bottom: 150px;overflow: hidden;}
+.detailIn.moDetailIn {width: 1150px;}
+.detailIn h1 {color: #fff;letter-spacing: -0.05em;font-size: 50px;font-weight: bold;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-bottom: 20px;}
+.detailIn h1 a {border: 0.2rem solid #eee;border-radius: 10px;font-size: 32px;color: #eee;padding: 0.12rem;cursor: pointer;display: inline-block;margin-left: 50px;padding: 5px 8px;}
+.detailIn h1 a:hover {background-color: #fff;color: #333;}
+.detailIn h2 {color: #ddd;font-size: 30px;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-top: 100px;margin-bottom: 20px;}
+.detailIn p {color: #ccc;font-size: 20px;font-family: 'Noto sans KR', sans-serif; letter-spacing: -0.05em;text-align: left;}
+
+.detailIn .mainImg,
+.detailIn .mapImg {width: 100%;border-radius: 15px;}
+
+
+.detailIn .detailImg {width: 100%;}
+
+.detailIn.reactdetail .mainImg {display: none;}
+.reactdetail video {display: block;}
+.detailIn.reactdetail h3 {color: #ddd;font-size: 22px;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-top: 35px;}
+
+.detailIn.reactdetail .gositeBtn {display: flex;align-content: center;justify-content: space-between;width: 50%;margin: 30px auto 0;column-gap: 20px;}
+.detailIn a.gotosite,
+.detailIn a.gotolist {
+    font-family: 'Noto sans KR', sans-serif; 
+    letter-spacing: -0.05rem;
+    font-size: 16px;
+    padding: 0.8rem 0.05rem;
+    flex: 1;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    border: 0.15rem solid #fff;
+    padding: 1rem 0.05rem;
+    display: block;
+    width: 25%;
+    margin: 50px auto 0;
+    border-radius: 8px;
+    color: #fff;
+}
+.detailIn.reactdetail a.gotosite,
+.detailIn a.gotolist {display: inline-block;width: auto;margin: 0;margin-top: 40px;padding: 0.8rem 0.5rem}
+
+.detailIn a.gotolist {margin-top: 20px;}
+.detailIn a.gotolist:hover,
+.detailIn a.gotosite:hover {background-color: #fff;color: #111;font-weight: bold;}
+
+.detailIn .workinfo {height: 150px;text-align: left;}
+.detailIn .workinfo ul {display: flex;margin-bottom: 15px;align-items: center;}
+.detailIn .workinfo ul li {font-size: 19px;color: #ccc;}
+.detailIn .workinfo ul li:nth-child(2n-1) {background-color:rgba(10, 239, 239, 0.4);border-radius: 15px;padding: 5px;color: #fff;width: 100px;text-align: center;display: inline-block;margin-right: 20px;}
+
+
+
+
+
+/* 해시태그 */
+.detailIn>ul {display: flex;margin-top: 30px;column-gap: 10px;margin-bottom: 30px;flex-wrap: wrap;row-gap: 10px;}
+.detailIn>ul>li {
+    font-size: 14px;
+    color:  rgb(17, 191, 197);
+    border: 0.15rem solid rgb(17, 191, 197);
+    padding: 0.3rem 0.6rem;
+    border-radius: 10rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width : 1200px) and (max-width : 1600px) {
+    .detailIn p, .detailIn .workinfo ul li {font-size: 18px;}
+    .detailpage .swiper-container {width: 100%;}
+}
+
+@media (min-width : 1024px) and (max-width : 1199.9px) {
+    .detailIn {width: 724px}
+    .detailIn.moDetailIn {width: 924px}  
+    .detailpage .swiper-container {width: 100%;}
+    .detailIn p, .detailIn .workinfo ul li {font-size: 16px;}
+    .detailpage .swiperArr .swiper-button-prev {left: 87%;}
+  
+
+}
+@media (min-width : 768px) and (max-width : 1023.9px) {
+    .detailIn {width: 600px}
+    .detailIn.moDetailIn {width: 650px;}
+    .detailpage .swiper-container {width: 100%;}
+    .detailIn p, .detailIn .workinfo ul li {font-size: 16px;}
+    .detailpage .swiperArr .swiper-button-prev {left: 82%;;}
+    .detailpage .swiper-button-prev:after, .detailpage .swiper-button-next:after {font-size: 20px !important;}
+    .detailpage.everydetail .swiperArr .swiper-button-prev {left: 80%;}
+}
+
+@media (min-width : 320px) and (max-width : 767.9px) {
+    .detailIn,
+    .detailIn.moDetailIn {width: 100%;padding-top: 0;}
+    .detailpage .swiper-container {width: 100%;}
+    .detailIn p, .detailIn .workinfo ul li {font-size: 15px;}
+    .detailIn h1 {font-size: 36px;margin-bottom: 20px;}
+    .detailIn a.gotosite, .detailIn a.gotolist {
+        width: 100px;
+        padding: 10px 8px;
+        margin: 30px auto 0;
+        font-size: 14px;
+    }
+    .detailIn h2 {margin-top: 80px;}
+    .detailpage .swiper-container {width: 100%;}
+    .detailIn .workinfo ul li:nth-child(2n-1) {width: 60px;margin-right: 10px;padding: 3px 10px;}
+    .detailIn h1 a {margin-left: 30px;padding: 3px 5px;}
+    .detailpage .swiperArr .swiper-button-prev {left: 80%;}
+    .detailpage .swiper-button-prev:after, .detailpage .swiper-button-next:after {font-size: 20px !important;}
+    .detailpage.everydetail .swiperArr {width: 90%;}
+    .detailpage.everydetail .swiperArr .swiper-button-prev {left: 80%;}
+    .reactdetail video {display: none;}
+    .detailIn.reactdetail .mainImg {display: block;}
+}
+
+@media (min-width : 450px) and (max-width : 610px) {
+    .detailpage .swiperArr .swiper-button-prev {left: 75%;}
+    .detailpage.everydetail .swiperArr .swiper-button-prev {left: 75%;}
+}
+
+@media (min-width : 320px) and (max-width : 610px) {
+    .detailIn .workinfo ul {flex-direction: column;align-items: start;gap: 5px;}
+    .detailIn.reactdetail .gositeBtn {width: 100%;}
+}
+
+@media (min-width : 320px) and (max-width : 450px) {
+    .detailpage .swiperArr .swiper-button-prev {left: 65%;}
+    .detailpage.everydetail .swiperArr .swiper-button-prev {left: 65%;}
+}

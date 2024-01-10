@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Detail</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/detailfavi.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul id="menu">
+          <li data-menuanchor="sec0" class="active"><a href="index.html#sec0">BYSEONG</a>
+            <a href="https://github.com/byeon-seong-won" class="xi-github" target="_blank"></a>
+            <!-- <a href="https://velog.io/@byseong" class=" xi-vimeo" target="_blank"></a> -->
+          </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="detailpage">
+    <div id="fullpage">
+      <!-- main -->
+        <div class="section">
+            <div class="detailIn reactdetail">
+                <h1>Daily Blog</h1>
+                <p>개인작업 일상 블로그</p>
+                <ul>
+                  <li>#Vue</li>
+                  <li>#Javascript</li>
+                  <li>#CRUD</li>
+                  <li>#All Devices</li>
+                  <li>#100% 개인작업</li>
+                </ul>
+                <img src="img/mobilblog.png" alt="shop" class="mainImg mobile">
+                <video class="bg-video__content" autoplay muted loop width="100%" style="border-radius: 10px;">
+                  <source src="img/blogscreen.webm" type="video/mp4" />
+                  <source src="img/blogscreen.webm" type="video/webm" />
+                  Your browser is not supported!
+                </video>
+                <!-- <img src="img/blogMain.png" alt="blog" class="mapImg"> -->
+                <div class="gositeBtn">
+                  <a href="https://byeon-seong-won.github.io/vueblog" class="gotosite">사이트 바로가기</a>
+                  <a href="https://github.com/byeon-seong-won/vue.js_blog_project" class="gotosite" target="_blank">GitHub 바로가기</a>
+                </div>
+                <h2>OverView.</h2>
+                <p>Pages : main + post + detail</p>
+                <p>Component : menu + main + post + list + detail + filterbox</p>
+                <h2>Service Info.</h2>
+                <h3><span class="xi-check-min"></span>Main page</h3>
+                <p>- main 페이지와 menu로 구성</p>
+                <h3><span class="xi-check-min"></span>Post page</h3>
+                <p>1) CRUD(추가/수정/삭제/읽기) 가능</p>
+                <p>2) v-for을 이용한 리스트 전체 노출 (List component)</p>
+                <p>3) 삭제 클릭 시 해당 포스트 리스트에서 삭제</p>
+                <p>4) 새 글 작성 클릭 시 v-if를 이용한 단계별 업로드 페이지 노출</p>
+                <p>5) 단계별 빈 내용 check 함수 -> 비어있을 경우 alert 노출</p>
+                <p>6) Step 1</p>
+                <p>7) - 이미지 업로드 (v-if을 이용해 이미지 업로드 전 notfound 이미지 노출)</p>
+                <p>7) - $emit을 이용한 이미지 필터 선택 (Filter component)</p>
+                <p>8) Step 2</p>
+                <p>9) - step1의 업로드 한 이미지 노출</p>
+                <p>10) - 텍스트 업로드</p>
+                <h3><span class="xi-check-min"></span>Detail page</h3>
+                <p>1) 상세보기 클릭 시 해당 포스트 상세페이지로 이동</p>
+                <p>2) 수정하기 클릭 시 v-if를 이용한 수정 페이지 노출</p>
+                <p>3) 수정 이미지 업로드 (v-if을 이용해 이미지 업로드 전 notfound 이미지 노출)</p>
+                <p>4) 이미지 업로드 미완료 및 빈 내용 check 함수</p>  
+                <p>5) $emit을 이용한 이미지 필터 선택 (Filter component)</p>  
+                <p>6) 수정완료 클릭 시 수정된 내용으로 변경되며 리스트 페이지로 이동</p>  
+                <h2>Devices.</h2>
+                <img src="img/blogMain.png" alt="blog" class="mapImg">
+                <h2 class="last">Work Info.</h2>
+                <div class="workinfo">
+                    <ul>
+                        <li>제작 기간</li>
+                        <li>2023.10.20 ~ 2023.10.30</li>
+                    </ul>
+                    <ul>
+                        <li>제작 영역</li>
+                        <li>사이트 전반 디자인 및 구현</li>
+                    </ul>
+                    <ul>
+                        <li>사용 툴</li>
+                        <li>Vue.js, HTML, Javascript, CSS, Git</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+  </div>
+</section>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"></script>
+
+<!-- Slick.js -->
+<script src="js/slick.js"></script>
+<script type="text/javascript" src="js/index.js"></script> 
+<script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopmall Detail</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/detailfavi.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul id="menu">
+          <li data-menuanchor="sec0" class="active"><a href="index.html#sec0">BYSEONG</a>
+            <a href="https://github.com/byeon-seong-won" class="xi-github" target="_blank"></a>
+            <!-- <a href="https://velog.io/@byseong" class=" xi-vimeo" target="_blank"></a> -->
+          </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="detailpage">
+    <div id="fullpage">
+      <!-- main -->
+        <div class="section">
+            <div class="detailIn reactdetail">
+                <h1>Shopping Mall</h1>
+                <p>개인작업 쇼핑몰</p>
+                <ul>
+                  <li>#React</li>
+                  <li>#Redux-toolkit</li>
+                  <li>#Styled-component</li>
+                  <li>#Javascript</li>
+                  <li>#All Devices</li>
+                  <li>#100% 개인작업</li>
+                </ul>
+                <img src="img/mobilesp.png" alt="shop" class="mainImg mobile">
+                <video class="bg-video__content" autoplay muted loop width="100%" style="border-radius: 10px;">
+                  <source src="img/shopmallrecord03.webm" type="video/mp4" />
+                  <source src="img/shopmallrecord03.webm" type="video/webm" />
+                  Your browser is not supported!
+                </video>
+                <div class="gositeBtn">
+                  <a href="https://byeon-seong-won.github.io/" class="gotosite">사이트 바로가기</a>
+                  <a href="https://github.com/byeon-seong-won/react.js_shopmall_project" class="gotosite" target="_blank">GitHub 바로가기</a>
+                </div>
+                <h2>OverView.</h2>
+                <p>Pages : main + detail(30pages) + cart</p>
+                <p>Component : header + footer + modal</p>
+                <p>상태관리 : redux toolkit(createSlice) + useState</p>
+                <p>responsive : styled-component </p>
+                <h2>Service Info.</h2>
+                <h3><span class="xi-check-min"></span>Main page</h3>
+                <p>1) MySQL을 이용해 상품 table 생성 후 node.js와 연결해 'more view' 클릭 시 해당 데이터 가져오기</p>
+                <p>2) tab기능을 이용해 type별 상품 노출</p>
+                <p>3) 상품별 호버 시 해당 상품 이름 모달창 노출</p>
+                <p>4) 상품 클릭 시 해당 상품 상세페이지 이동</p>
+                <h3><span class="xi-check-min"></span>Detail page</h3>
+                <p>1) redux(createSlice)로 상태관리</p>
+                <p>2) 구매하기 클릭 시 바로 장바구니로 이동되며 해당 상품 수량 +1</p>
+                <p>3) 장바구니 담기 클릭 시 이중 모달창 : 확인 모달창 노출 -> 확인 클릭 시 장바구니로 이동되며 수량 +1 </p>
+                <p>4) 장바구니에 중복 상품 있을 경우 수량 +1, 없을 경우 항목 추가</p>
+                <p>5) 탭 기능 구현 : useState로 상태관리 (+애니메이션 효과)</p>
+                <p>6) 하단 탭메뉴1 : 공간 및 배경색 클릭시 해당 이미지와 배경색상 노출</p>
+                <p>7) 하단 탭메뉴2 : 각 텍스트 아코디언 메뉴로 노출</p>
+                <h3><span class="xi-check-min"></span>Cart page</h3>
+                <p>1) redux(createSlice)로 상태관리</p>
+                <p>2) 각 상품별 수량에 따른 가격변동과 총 합계 금액 계산</p>
+                <p>3) 각 상품별 삭제버튼 클릭시 -> 확인 모달창 노출 -> 확인 클릭시 삭제</p>
+                <p>4) 수량 변경 버튼 + 수량이 음수가 되지 않도록 alert 창 노출</p>  
+                <h2>Devices.</h2>
+                <img src="img/shopmall.png" alt="shopmall" class="mapImg">
+                <h2 class="last">Work Info.</h2>
+                <div class="workinfo">
+                    <ul>
+                        <li>제작 기간</li>
+                        <li>2023.06 ~ 2023.07</li>
+                    </ul>
+                    <ul>
+                        <li>제작 영역</li>
+                        <li>사이트 전반 디자인 및 구현</li>
+                    </ul>
+                    <ul>
+                        <li>사용 툴</li>
+                        <li>React.js, Styled-component, HTML, Javascript, Node.js, MySQL, Git</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+  </div>
+</section>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"></script>
+
+<!-- Slick.js -->
+<script src="js/slick.js"></script>
+<script type="text/javascript" src="js/index.js"></script> 
+<script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+</body>
+</html>

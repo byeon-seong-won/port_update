@@ -1,0 +1,626 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+@import url(common.css);
+@import url(bgani.css);
+@import url(detail.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+  /* background: #dfdfdf; */
+}
+.container .hero {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100vh;
+}
+.container .hero .copy {
+  display: grid;
+  align-content: center;
+  padding: 0 1rem;
+  height: 100%;
+}
+.container .hero .copy blockquote {
+  font-size: 6vmin;
+  font-weight: 300;
+}
+.container .hero .copy blockquote span {
+  font-style: italic;
+  font-weight: 400;
+}
+.container .hero .copy blockquote cite {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 4.5vmin;
+  display: block;
+  padding: 8px 0;
+}
+.container .hero .image-wrapper {
+  height: 100vh;
+  width: 100%;
+}
+.container .hero .image-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.container .section-0 {
+  margin-top: 20vh;
+  text-align: center;
+}
+.container .section-0 p {
+  font-size: 5vw;
+}
+.container .section-0 cite {
+  font-size: 3vw;
+}
+.container .section-1 {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  padding: 0 1rem;
+}
+.container .section-1 .image-mask {
+  width: 80vw;
+  height: 80vh;
+  /* background: url("https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Ftumblr_n92tblyC8d1s3sziio1_1280.jpg?alt=media&token=c5d75884-4bc3-46bb-815d-414d2ec68e4b"); */
+  background: url(../img/profileimg.jpg);
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 90%;
+  background-size: 100%;
+}
+.container .section-1 .image-mask img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.container .section-1 blockquote {
+  font-size: 9vmin;
+  font-weight: 300;
+}
+.container .section-1 blockquote span {
+  font-style: italic;
+  font-weight: 400;
+}
+.container .section-1 blockquote cite {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 7.5vmin;
+  display: block;
+  padding: 8px 0;
+}
+.container .section-2 {
+  height: calc(300vh + 32px + 16px);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 40% 60%;
+}
+.container .section-2 blockquote {
+  font-size: 8vmin;
+
+  padding: 16px 16px 0 16px;
+}
+.container .section-2 blockquote cite {
+  display: block;
+}
+.container .section-2 .images-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 8px;
+  gap: 8px;
+  margin-top: 16px;
+}
+.container .section-2 .images-container img {
+  width: 100%;
+  max-height: 75vh;
+  height: 100%;
+  align-self: stretch;
+  object-fit: cover;
+}
+.container .section-3 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  position: relative;
+}
+.container .section-3 .image-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.container .section-3 .image-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.container .section-3 .copy {
+  font-size: 8vmin;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  align-content: center;
+}
+.container .section-3 .copy blockquote {
+  margin: 0 32px;
+}
+.container .section-3 .copyright {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  font-size: 4vmin !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* works 호버 */
+.hoverImg {cursor: pointer;}
+
+.hoverbefore {display: block;}
+.hoverafter {display: none;}
+.hoverImg:hover .hoverafter {display: block;object-fit: contain;}
+.hoverImg:hover .hoverbefore {display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --text-color: #111;
+  --bg-color: #b9b3a9;
+}
+
+body {
+  font-family: termina, sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  transition: 0.3s ease-out;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  overscroll-behavior: none;
+}
+
+.section:not(.horizontal-scroll) {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+  place-items: center;
+}
+
+img {
+  height: 80vh;
+  width: auto;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 8rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 16vw;
+  }
+}
+h1 span {
+  display: block;
+}
+
+h2 {
+  font-size: 2rem;
+  max-width: 400px;
+}
+
+.credit {
+  font-family: Termina, sans-serif;
+}
+.credit a {
+  color: var(--text-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.horizontal-scroll {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  left: 0;
+}
+
+.pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw;
+}
+.pin-wrap > * {
+  min-width: 60vw;
+  padding: 0 5vw;
+}
+
+/* p {
+  position: absolute;
+  bottom: 10vw;
+  right: 10vw;
+  width: 200px;
+  line-height: 1.5;
+} */
+
+
+
+
+
+
+
+
+
+/* 매인 효과 */
+.outer-container {
+
+  width: 700px;
+  
+  margin: auto;
+  padding: 100px 0;
+  position: relative;
+
+
+}
+
+.image-container {
+  padding-bottom: 100%;
+
+  /* background: rgba(230, 226, 221,0.15); */
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+  color: #000;
+  border-radius: 50%;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 10rem;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: -70%;
+  transform: translateY(-50%);
+  z-index: 1;
+  white-space: nowrap;
+  color: #fff;
+  /* color: #e6e2dd; */
+  line-height: 10rem;
+}
+.section-title.on-dark {
+  /* color:#e6e2dd */
+  /* color: #e6e2dd; */
+  color: #fff;
+}
+.section-title>span {
+  position: relative;
+  display: block;
+  font-weight: 300;
+
+}
+
+
+
+.cursor {
+  position: absolute;
+}
+.cursor .blob {
+  position: absolute;
+  margin: -15px 0 0 -15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #f5e41b;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body.active #frame .frame-container #penlink {
+  transform: rotate(0deg);
+  transition-delay: 0.3s, 2s;
+}
+body.active #frame .frame-container #penlink span {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+body.active #wrap {
+  transform: translateX(-125vw);
+  transition-delay: 0s;
+}
+body.active #wrap .panel h2 span.word:before {
+  transform: translate(-50%, 100px);
+  transition: 0s ease-in-out;
+  transition-delay: 0s;
+}
+body.active #frame {
+  transform: translateX(0);
+  transition-delay: 0.25s;
+}
+body.active #frame #close {
+  transform: rotate(180deg) scale(1);
+  transition-delay: 1.2s, 0s;
+}
+body.active #frame #close strong .word {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+body.active #frame #close strong span.char:before {
+  transform: translateY(0);
+}
+body.active #frame #close:hover {
+  box-shadow: 0 0 0 2px #fe4e01, inset 0 0 0 20px #fe4e01, 0 0 0 20px #eeece5, 0 0 0 22px #fe4e01;
+}
+body.active #frame #close:hover strong span.char:before {
+  color: #08350e;
+}
+body.active #frame #close div {
+  transition-delay: 1.8s;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+body.active #frame #close:before, body.active #frame #close:after {
+  transition-delay: 2.1s;
+}
+body.active #frame #close:before {
+  transform: scaleY(1) rotate(-45deg);
+}
+body.active #frame #close:after {
+  transform: scaleY(1) rotate(45deg);
+}
+body.active #frame:before, body.active #frame:after {
+  transition-delay: 0.75s;
+  transform: translateX(-175%) skewX(5deg);
+}
+body.active #frame:after {
+  transform: translateX(-150%) skewX(-15deg);
+}
+body.active #frame .frame-container iframe {
+  -webkit-clip-path: polygon(-10% -10%, 110% -10%, 110% 110%, -10% 110%);
+          clip-path: polygon(-10% -10%, 110% -10%, 110% 110%, -10% 110%);
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+ */
+
+
+
+
+
+
+
+
+body #loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eeece5;
+  position: fixed;
+  box-sizing: border-box;
+  width: calc(100vw - 5px);
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: transform 0.6s cubic-bezier(1, 0.885, 0.32, 1);
+  transition-delay: 1.25s;
+  transform-origin: bottom;
+  background: #f5e41b;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+/* body #loader:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  top: -75%;
+  background: #a58725;
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+} */
+body #loader .wrap {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  -webkit-animation: rotate 5s linear infinite;
+          animation: rotate 5s linear infinite;
+  transition: opacity 0.8s ease-in-out, -webkit-animation-play-state 2s ease-in-out;
+  transition: opacity 0.8s ease-in-out, animation-play-state 2s ease-in-out;
+  transition: opacity 0.8s ease-in-out, animation-play-state 2s ease-in-out, -webkit-animation-play-state 2s ease-in-out;
+  transition-delay: 0.8s, 0.8s;
+}
+body #loader .wrap span {
+  color: #000;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
+  transform-origin: 50% 40px;
+  top: -34px;
+  -webkit-animation: popping 0.8s ease-in-out infinite alternate;
+          animation: popping 0.8s ease-in-out infinite alternate;
+}
+@-webkit-keyframes popping {
+  to {
+    top: -24px;
+  }
+}
+@keyframes popping {
+  to {
+    top: -24px;
+  }
+}
+body #loader .wrap span:nth-of-type(1) {
+  transform: rotate(36deg);
+  -webkit-animation-delay: -0.0625s;
+          animation-delay: -0.0625s;
+}
+body #loader .wrap span:nth-of-type(2) {
+  transform: rotate(72deg);
+  -webkit-animation-delay: -0.125s;
+          animation-delay: -0.125s;
+}
+body #loader .wrap span:nth-of-type(3) {
+  transform: rotate(108deg);
+  -webkit-animation-delay: -0.1875s;
+          animation-delay: -0.1875s;
+}
+body #loader .wrap span:nth-of-type(4) {
+  transform: rotate(144deg);
+  -webkit-animation-delay: -0.25s;
+          animation-delay: -0.25s;
+}
+body #loader .wrap span:nth-of-type(5) {
+  transform: rotate(180deg);
+  -webkit-animation-delay: -0.3125s;
+          animation-delay: -0.3125s;
+}
+body #loader .wrap span:nth-of-type(6) {
+  transform: rotate(216deg);
+  -webkit-animation-delay: -0.375s;
+          animation-delay: -0.375s;
+}
+body #loader .wrap span:nth-of-type(7) {
+  transform: rotate(252deg);
+  -webkit-animation-delay: -0.4375s;
+          animation-delay: -0.4375s;
+}
+body #loader .wrap span:nth-of-type(8) {
+  transform: rotate(288deg);
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+body #loader .wrap span:nth-of-type(9) {
+  transform: rotate(324deg);
+  -webkit-animation-delay: -0.5625s;
+          animation-delay: -0.5625s;
+}
+body #loader .wrap span:nth-of-type(10) {
+  transform: rotate(360deg);
+  -webkit-animation-delay: -0.625s;
+          animation-delay: -0.625s;
+}
+body.loaded {
+  pointer-events: all;
+}
+body.loaded #social a:nth-of-type(1n) svg {
+  transform: translateX(0);
+  transition-delay: 0s, 2.4s;
+}
+body.loaded #social a:last-of-type svg {
+  transition-delay: 0s, 2.6s;
+}
+body.loaded #loader {
+  transform: scaleY(0);
+  color: transparent;
+}
+body.loaded #loader .wrap {
+  opacity: 0;
+  -webkit-animation-iteration-count: 4;
+          animation-iteration-count: 4;
+}
+body.loaded #loader .wrap span {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+
+
+
+
+
+
+
+
+/* 
+.swiper-container {width: 100%;background-color: #272829;}
+.swiper-wrapper {position: relative;width: 1200px;margin: 0 auto;}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;  
+  object-fit: cover;
+} */

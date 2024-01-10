@@ -1,0 +1,78 @@
+/*---------- 웹폰트 CDN ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/* font-family: 'Nanum Gothic', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+/* font-family: 'Nanum Myeongjo', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Exo', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&display=swap');
+/* font-family: 'Bellota', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Maldives-51qp8';
+    src: url('../font/Maldives-51qp8.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Zephyr-Regular';
+    src: url('../font/Zephyr-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Zephyr-Two';
+    src: url('../font/Zephyr-Two.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*---------- 아이콘폰트 CDN ----------*/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css'); 
+
+
+
+
+/*---------- 공통 속성 ----------*/
+*{ margin: 0;padding: 0;font-family: 'Noto Sans KR', sans-serif;word-break: keep-all;}
+html, body {width: 100%;height: 100%;}
+html {overflow-y: scroll; overflow-x: hidden; } 
+article,aside,details,summary,figcaption,figure,
+footer,header,hgroup,main,nav,section {display: block;}
+li {list-style-type: none;} 
+a {text-decoration: none;color: inherit;} 
+table {border-collapse: collapse;}
+input, select {vertical-align: middle;}
+button,
+input[type=button],
+input[type=submit],
+input[type=reset]{cursor: pointer;}
+button,input{outline: none;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight: normal; margin-top: 0; }
+img{vertical-align:top;font-size:0;border:0;}
+
+
+
+
+
